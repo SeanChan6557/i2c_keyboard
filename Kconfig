@@ -1,0 +1,22 @@
+#
+# wrt gpio driver configuration
+#
+menuconfig WRT_GPIO
+	bool "gpio drivers"
+	help
+	  Say Y here, and a list of supported touchscreens will be displayed.
+	  This option doesn't affect the kernel.
+
+	  If unsure, say Y.
+
+if WRT_GPIO
+
+
+config WRT_TOUCHKEY
+	tristate "touch button driver support"
+	help
+	 touch button driver
+
+	  
+	  
+endif
